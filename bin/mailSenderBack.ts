@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { LambdaS3Stack } from '../lib/lambda_s3-stack';
+import { MailSenderStack } from '../lib/mailSenderStack';
 
 const app = new cdk.App();
-new LambdaS3Stack(app, 'LambdaS3Stack');
+new MailSenderStack(app, 'MailSenderStack');

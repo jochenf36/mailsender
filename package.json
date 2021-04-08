@@ -1,8 +1,8 @@
 {
-  "name": "lambda_s3",
+  "name": "mail-sender-backend",
   "version": "0.1.0",
   "bin": {
-    "lambda_s3": "bin/lambda_s3.js"
+    "MailSenderBack": "bin/MailSenderBack.js"
   },
   "scripts": {
     "build": "tsc",
@@ -12,16 +12,25 @@
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.91.0",
-    "@types/jest": "^26.0.10",
+    "@types/jest": "^26.0.21",
     "@types/node": "10.17.27",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.2.0",
     "aws-cdk": "1.91.0",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.5.4",
     "ts-node": "^9.0.0",
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.91.0",
-    "source-map-support": "^0.5.16"
+    "@aws-cdk/aws-apigateway": "^1.95.0",
+    "@aws-cdk/aws-cognito": "^1.95.0",
+    "@aws-cdk/aws-dynamodb": "^1.95.0",
+    "@aws-cdk/aws-lambda": "^1.95.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.95.0",
+    "@aws-cdk/aws-s3": "^1.95.0",
+    "@aws-cdk/core": "^1.95.0",
+    "aws-sdk": "^2.871.0",
+    "lambda-api": "^0.10.7",
+    "source-map-support": "^0.5.16",
+    "uuid": "^8.3.2"
   }
 }
